@@ -43,16 +43,22 @@ body {
   form {
     max-width: 400px;
     margin: 0 auto;
+
   }
-  
+  label{
+        font-size: 2rem;
+  }
   form input, form textarea, form button {
     width: 100%;
     padding: 8px;
+        font-size: 2rem;
+
    
   }
 
   .error {
     color: red;
+    font-size: 1.2rem;
   }
   
   #form-feedback {
@@ -131,7 +137,7 @@ body {
 .tituloIniciales, 
 .form h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
     padding: 1rem 0;
 }
 .pokemonContainer{
@@ -165,12 +171,11 @@ body {
 }
 
 .card-pokemon a img{
-    width: 15rem;
-    object-fit: cover;
+    height: 30rem;
 }
 
 .card-pokemon h2{
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     text-align: center;
     color: #fff;
 }
@@ -188,8 +193,8 @@ body {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: .8rem;
-    padding: .1rem 1rem;
+    font-size: 2rem;
+    padding: .1rem 2rem;
            
 }
 .card-pokemon .tipoPoison{
@@ -207,10 +212,10 @@ body {
 .containerDetalles{
     display: flex;
     justify-content:space-evenly;
-    padding: .5rem 0;
+    padding: 1rem 0;
 }
 .containerDetalles p{
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     color: #fff;
 }
 
@@ -221,6 +226,7 @@ body {
     text-align: center;
     background-color: #333;
     padding: 2rem 0;
-    margin: 3rem 0 0 0;
-
+    margin: 6rem 0 0 0;
+    font-size: 4rem;
+    color: #fff;
 }
