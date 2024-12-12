@@ -1,0 +1,226 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: right;
+    height: 5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 2rem;
+}
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+  
+  /* Formulario */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 8px;
+   
+  }
+
+  .error {
+    color: red;
+  }
+  
+  #form-feedback {
+    color: green;
+  }
+.pokebola{
+    width: 5rem;
+    position: fixed;
+    top: 41rem;
+    animation: spin 8s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        /* Comienza desde 0 grados */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Gira completamente (360 grados) */
+    }
+}
+.pokemonCapturado{
+    width: 25rem;
+    background-color: orange;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 28%;
+    left: 36%;
+    display: none;
+
+}
+.cerrar{
+    font-size: .8rem;
+    cursor: pointer;
+}
+.pokemonCapturado h2{
+    font-size: 1.5rem;
+}
+.pokemonCapturado img{
+    width: 20rem;
+}
+
+.banner{ 
+    background-image: url("./pixelcut-export.png");
+    width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner img{
+    width: 50rem;
+    position: absolute;
+    top: 0%;
+    left: 22%;
+}
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+
+}
+.contenido p{
+    font-size: 2rem;
+}
+.contenido img{
+    width: 25rem;
+}
+.tituloIniciales, 
+.form h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.pokemonContainer{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    
+}
+.card-pokemon{
+    background-color: #333;
+    &:hover{
+        transition: transform 0.25s;
+        transform: scale(1.1);
+           
+    }
+}
+.bulbasaur{
+    background: rgb(0, 140, 27);
+        background: linear-gradient(90deg, rgba(0, 140, 27, 0.8960739030023095) 17%, rgba(145, 227, 134, 1) 74%);
+}
+.charmander{
+    background: rgb(255, 0, 0);
+        background: linear-gradient(90deg, rgba(255, 0, 0, 0.8290993071593533) 10%, rgba(255, 155, 31, 0.9122401847575058) 74%);
+}
+.squirtle{
+    background: rgb(31, 108, 255);
+        background: linear-gradient(90deg, rgba(31, 108, 255, 0.9122401847575058) 34%, rgba(0, 212, 255, 1) 78%);
+}
+
+.card-pokemon a img{
+    width: 15rem;
+    object-fit: cover;
+}
+
+.card-pokemon h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.card-pokemon .tipo{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+.card-pokemon .tipoGrass,
+.card-pokemon .tipoPoison,
+.card-pokemon .tipoFire,
+.card-pokemon .tipoWater{
+    border-radius: 4px;
+    background-color:green;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: .8rem;
+    padding: .1rem 1rem;
+           
+}
+.card-pokemon .tipoPoison{
+    background-color: purple;
+}
+
+.card-pokemon .tipoFire{
+    background-color: red;
+}
+
+.card-pokemon .tipoWater{
+    background-color: blue
+}
+
+.containerDetalles{
+    display: flex;
+    justify-content:space-evenly;
+    padding: .5rem 0;
+}
+.containerDetalles p{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.containerDetalles .detalles{
+    text-align: center;
+}
+ footer{
+    text-align: center;
+    background-color: #333;
+    padding: 2rem 0;
+    margin: 3rem 0 0 0;
+
+}
